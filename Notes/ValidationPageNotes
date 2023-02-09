@@ -1,1 +1,2 @@
 Dr Johnson's feedback says that each condition description should be shown somewhere on the validation page.
+Thinking I should restructure it to have each condition show each person as a sublist, compared to the design doc
