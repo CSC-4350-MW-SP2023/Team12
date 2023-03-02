@@ -1,0 +1,82 @@
+body{
+	margin: 0
+}
+.App{
+	height: 100vh;
+    width: 100vw;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.vvcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+  
+ button {
+    display: block;
+    margin: 7px auto;
+	max-width: 20em auto;
+    padding: 10px;
+    background-color: #F57C00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  button[type=link] {
+	 background-color: purple;
+  }
+  
+  button[type=delete] {
+	 background-color: red;
+	 padding: 3px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  thead {
+    background-color: #F57C00;
+    color: #FFFFFF;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #DDDDDD;
+  }
+  
+
+  tr:nth-child(even) {
+    background-color: #EFEFEF;
+  }
+  
+  tr:hover {
+    background-color: #FFCC80;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type=text], textarea {
+    padding: 10px;
+    font-size: 1em;
+  }
+ .react-calendar button {
+	color: black;
+ }
