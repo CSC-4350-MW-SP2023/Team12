@@ -4,46 +4,101 @@
 <head>
 <title>Visitor Information</title>
 <style>
- body {
-  background-color: orange;
- }
- form {
-  background-color: white;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 500px;
-  border-radius: 5px;
- }
- input[type="submit"] {
-  background-color: green;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
- }
+body {
+ background-color: orange;
+}
+form {
+ background-color: white;
+ padding: 20px;
+ margin: 20px auto;
+ max-width: 500px;
+ border-radius: 5px;
+}
+input[type="submit"] {
+ background-color: green;
+ color: white;
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+table {
+ border-collapse: collapse;
+ margin: 20px auto;
+ background-color: white;
+}
+th, td {
+ padding: 10px;
+ text-align: center;
+ border: 1px solid black;
+}
+th {
+ background-color: gray;
+ color: white;
+}
+button {
+ background-color: red;
+ color: white;
+ padding: 5px 10px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
 </style>
 </head>
 <body>
 <form>
- <label for="name">Name:</label>
+ <label for="name">Name: </label>
  <input type="text" id="name" name="name" required><br><br>
  <label for="email">Email:</label>
  <input type="email" id="email" name="email" required><br><br>
- <input type="submit" value="Save Visitor Information">
+ <input type="submit" value="Save">
 </form>
+<table>
+ <thead>
+   <tr>
+     <th>Name</th>
+     <th>Email</th>
+     
+     <th>Delete</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Reagan Samwayes</td>
+    <td>rsamwayes@jiathis.com</td>
+    
+     <td><button>Delete</button></td>
+   </tr>
+   <tr>
+     <td>Filippo Howerd</td>
+     <td>fhowerd11@shareasale.com</td>
+     
+     <td><button>Delete</button></td>
+   </tr>
+   <tr>
+     <td>Tony Valentinetti</td>
+     <td>tvalentinetti@woothemes.com</td>
+     
+     <td><button>Delete</button></td>
+   </tr>
+   <tr>
+     <td>Fitz Morrid</td>
+     <td>fmorrid3@wikipedia.org</td>
+     
+     <td><button>Delete</button></td>
+   </tr>
+ </tbody>
+</table>
 <script>
  document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form from submitting normally
-  
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  
-  localStorage.setItem('name', name);
-  localStorage.setItem('email', email);
-  alert('Information saved successfully!');
+   event.preventDefault();
+   var name = document.getElementById('name').value;
+   var email = document.getElementById('email').value;
+   localStorage.setItem('name', name);
+   localStorage.setItem('email', email);
+   alert('Information saved successfully!');
  });
 </script>
 </body>
 </html>
- 
